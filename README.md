@@ -27,7 +27,11 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true, useUnifiedTopology: true});
 ```
 ## Execution
-
+Create Database
+```bash
+node createDatabse.js
+```
+Main Execution
 ```bash
 node index.js
 ```
