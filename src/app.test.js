@@ -34,9 +34,9 @@ describe('GET /subscribers/id',()=>{
     })
 })
 
-describe('GET /subscribers/6425365382428e0c2c4a4d43',()=>{
+describe('GET /subscribers/6427e284662f75253cdd5d38',()=>{
     it('responds with a 200 status code',async()=>{
-        const res=await request(app).get('/subscribers/6425365382428e0c2c4a4d43');
+        const res=await request(app).get('/subscribers/6427e284662f75253cdd5d38');
         expect(res.statusCode).equal(200);
     })
 })

@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 3,
-    "passes": 2,
+    "suites": 5,
+    "tests": 5,
+    "passes": 3,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-03-30T07:11:47.942Z",
-    "end": "2023-03-30T07:12:01.221Z",
-    "duration": 13279,
-    "testsRegistered": 3,
-    "passPercent": 66.66666666666666,
+    "failures": 2,
+    "start": "2023-04-01T08:30:06.496Z",
+    "end": "2023-04-01T08:30:35.279Z",
+    "duration": 28783,
+    "testsRegistered": 5,
+    "passPercent": 60,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fd948eee-854c-4d7d-b7e7-b41c537d997f",
+      "uuid": "07eda4ac-2382-46de-bbff-adbb6fca2e44",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ce16b1f7-bf70-4eff-99b3-50cd7c8b1d92",
+          "uuid": "2a52885b-26a9-42ab-b3e6-6608b994fcb1",
           "title": "GET /",
           "fullFile": "E:\\backendproject\\Subscribers-Mongo-Node-BoilerPlate-main\\src\\app.test.js",
           "file": "\\src\\app.test.js",
@@ -38,7 +38,7 @@
               "title": "responds with a 200 status code",
               "fullTitle": "GET / responds with a 200 status code",
               "timedOut": false,
-              "duration": 320,
+              "duration": 157,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,26 +47,26 @@
               "context": null,
               "code": "const res=await request(app).get('/');\nexpect(res.statusCode).equal(200);",
               "err": {},
-              "uuid": "f34c382c-c7ab-4e0c-a690-fa4d720f3512",
-              "parentUUID": "ce16b1f7-bf70-4eff-99b3-50cd7c8b1d92",
+              "uuid": "09ff2f87-aefd-473d-a566-9989a533b7af",
+              "parentUUID": "2a52885b-26a9-42ab-b3e6-6608b994fcb1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f34c382c-c7ab-4e0c-a690-fa4d720f3512"
+            "09ff2f87-aefd-473d-a566-9989a533b7af"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 320,
+          "duration": 157,
           "root": false,
           "rootEmpty": false,
           "_timeout": 6000000
         },
         {
-          "uuid": "0c3787ad-0d11-48cc-88c0-e04291190364",
+          "uuid": "f108a5dc-e764-4df0-8c5e-f61157a787e2",
           "title": "GET /subscribers",
           "fullFile": "E:\\backendproject\\Subscribers-Mongo-Node-BoilerPlate-main\\src\\app.test.js",
           "file": "\\src\\app.test.js",
@@ -77,7 +77,7 @@
               "title": "responds with a 200 status code",
               "fullTitle": "GET /subscribers responds with a 200 status code",
               "timedOut": false,
-              "duration": 1062,
+              "duration": 1958,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,26 +86,26 @@
               "context": null,
               "code": "const res=await request(app).get('/subscribers');\nexpect(res.statusCode).equal(200);",
               "err": {},
-              "uuid": "a98b3c90-59cf-446a-8af7-c7274596784d",
-              "parentUUID": "0c3787ad-0d11-48cc-88c0-e04291190364",
+              "uuid": "2c322071-7293-4ef4-b16b-b1fb8739a376",
+              "parentUUID": "f108a5dc-e764-4df0-8c5e-f61157a787e2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a98b3c90-59cf-446a-8af7-c7274596784d"
+            "2c322071-7293-4ef4-b16b-b1fb8739a376"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1062,
+          "duration": 1958,
           "root": false,
           "rootEmpty": false,
           "_timeout": 6000000
         },
         {
-          "uuid": "524c5e55-c8a4-4146-8a65-725aef672bc7",
+          "uuid": "d38e6c2d-477f-406d-9c5d-b764caa00282",
           "title": "GET /subscribers/names",
           "fullFile": "E:\\backendproject\\Subscribers-Mongo-Node-BoilerPlate-main\\src\\app.test.js",
           "file": "\\src\\app.test.js",
@@ -116,7 +116,7 @@
               "title": "responds with a 200 status code",
               "fullTitle": "GET /subscribers/names responds with a 200 status code",
               "timedOut": false,
-              "duration": 10037,
+              "duration": 10041,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -126,11 +126,11 @@
               "code": "const res=await request(app).get('/subscribers/names');\nexpect(res.statusCode).equal(200);",
               "err": {
                 "message": "AssertionError: expected 500 to equal 200",
-                "estack": "AssertionError: expected 500 to equal 200\n    at Context.<anonymous> (src\\app.test.js:23:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "estack": "AssertionError: expected 500 to equal 200\n    at Context.<anonymous> (src\\app.test.js:26:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": "- 500\n+ 200\n"
               },
-              "uuid": "899aa5d6-4ed0-40b2-8ffc-5e640539e0de",
-              "parentUUID": "524c5e55-c8a4-4146-8a65-725aef672bc7",
+              "uuid": "67eb21bd-e563-40e2-91e5-97b1e9916440",
+              "parentUUID": "d38e6c2d-477f-406d-9c5d-b764caa00282",
               "isHook": false,
               "skipped": false
             }
@@ -138,11 +138,93 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "899aa5d6-4ed0-40b2-8ffc-5e640539e0de"
+            "67eb21bd-e563-40e2-91e5-97b1e9916440"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 10037,
+          "duration": 10041,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 6000000
+        },
+        {
+          "uuid": "b6591bb8-c155-4267-a43e-fcbc7040b2c6",
+          "title": "GET /subscribers/id",
+          "fullFile": "E:\\backendproject\\Subscribers-Mongo-Node-BoilerPlate-main\\src\\app.test.js",
+          "file": "\\src\\app.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "responds with a 400 status code",
+              "fullTitle": "GET /subscribers/id responds with a 400 status code",
+              "timedOut": false,
+              "duration": 267,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const res=await request(app).get('/subscribers/id');\nexpect(res.statusCode).equal(400);",
+              "err": {},
+              "uuid": "476f19c0-bfd9-40f6-b7f5-f8617a880fbc",
+              "parentUUID": "b6591bb8-c155-4267-a43e-fcbc7040b2c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "476f19c0-bfd9-40f6-b7f5-f8617a880fbc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 267,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 6000000
+        },
+        {
+          "uuid": "db9ac3b3-58dd-419e-a19c-3f3ae37a5940",
+          "title": "GET /subscribers/6427e284662f75253cdd5d38",
+          "fullFile": "E:\\backendproject\\Subscribers-Mongo-Node-BoilerPlate-main\\src\\app.test.js",
+          "file": "\\src\\app.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "responds with a 200 status code",
+              "fullTitle": "GET /subscribers/6427e284662f75253cdd5d38 responds with a 200 status code",
+              "timedOut": false,
+              "duration": 10150,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const res=await request(app).get('/subscribers/6427e284662f75253cdd5d38');\nexpect(res.statusCode).equal(200);",
+              "err": {
+                "message": "AssertionError: expected 400 to equal 200",
+                "estack": "AssertionError: expected 400 to equal 200\n    at Context.<anonymous> (src\\app.test.js:40:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": "- 400\n+ 200\n"
+              },
+              "uuid": "478bc86b-4d74-46e5-b0b0-e61b5f9bc498",
+              "parentUUID": "db9ac3b3-58dd-419e-a19c-3f3ae37a5940",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "478bc86b-4d74-46e5-b0b0-e61b5f9bc498"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10150,
           "root": false,
           "rootEmpty": false,
           "_timeout": 6000000
